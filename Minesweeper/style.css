@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(199, 107, 154);
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+   padding: 10px;
+   background-color: rgb(179, 51, 110);
+   color: white;
+   cursor: pointer;
+}
+
+#grid {
+    margin: auto;
+}
+
+#grid tr td {
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #999;
+    text-align: center;
+}
+
+#grid tr td.active {
+    background-color: #ce76a2;
+}
+
+#grid tr td.mine {
+    background-color: #84305a;
+}
+
+.pen {
+    height: 20px;
+}
