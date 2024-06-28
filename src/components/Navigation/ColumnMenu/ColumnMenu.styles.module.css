@@ -1,0 +1,39 @@
+.columnMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  width: 200px;
+}
+
+.columnMenuItem {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.columnMenuItem:hover {
+  color: var(--tiffany-green);
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--text-color-secondary);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .columnMenu {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+      font-size: 12px;
+    }
+
+    .columnMenu {
+        padding: 0 5px;
+    }
+  }

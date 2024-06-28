@@ -1,0 +1,144 @@
+.infoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+  border: 1px solid rgba(53, 184, 190, 0.15);
+  border-radius: 6px;
+  padding: 26px;
+  gap: 26px;
+  max-width: 500px;
+  margin: 0 10px;
+}
+
+.title,
+.price,
+.description {
+  margin: 0;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text-color-secondary);
+  max-width: 250px;
+}
+
+.price {
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  color: var(--tiffany-green);
+}
+
+.description {
+  margin: 15px 0 10px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.input {
+  width: 50px;
+  height: 40px;
+  border: 1px solid;
+  border-color: rgba(221, 221, 221, 1);
+  border-radius: 5px;
+  background-color: rgba(250, 250, 250, 1);
+  text-align: center;
+}
+
+.inputError {
+  width: 50px;
+  height: 40px;
+  border: 1px red solid;
+  border-radius: 5px;
+  background-color: rgba(250, 250, 250, 1);
+  text-align: center;
+}
+
+.input:focus {
+  outline: 1px solid var(--tiffany-green);
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.image {
+  height: 110px;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: -20%;
+  left: 54%;
+  transform: translateX(-50%);
+  width: 400px;
+}
+
+.description {
+  margin: 15px 0 10px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    max-width: 300px;
+    gap: 14px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .infoWrapper {
+    flex-direction: column;
+  }
+
+  .price {
+    margin: 8px 0 -8px;
+  }
+}

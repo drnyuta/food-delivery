@@ -1,0 +1,43 @@
+.burgerMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+  opacity: 0.9;
+  height: fit-content;
+  z-index: 2;
+  position: absolute;
+  border-radius: 10px;
+  left: 30px;
+  top: 60px;
+  list-style: none;
+  width: 100px;
+}
+
+.active {
+  color: var(--tiffany-green);
+}
+
+.burgerMenuItem:hover {
+  color: var(--tiffany-green);
+}
+
+.burgerMenuItem {
+  color: white;
+  text-transform: uppercase;
+  font-size: var(--font-size-small);
+  text-decoration: none;
+}
+
+.crossIcon {
+  height: 15px;
+  width: 15px;
+  margin-left: 80px;
+}
+
+.crossButton {
+  border: none;
+  background-color: transparent;
+  width: 20px;
+}

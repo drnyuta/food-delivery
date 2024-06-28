@@ -1,0 +1,168 @@
+.title {
+  color: var(--tiffany-green);
+  font-weight: 400;
+  font-size: 54px;
+  margin: 0;
+  margin-top: 100px;
+  letter-spacing: 2px;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+}
+
+.background {
+  position: relative;
+  padding: 0 0 100px 0;
+  margin: 0;
+  margin-top: 30px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-secondary);
+  transform: skewY(-3deg);
+  z-index: -1;
+}
+
+.description {
+  max-width: 500px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 26px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: var(--tiffany-green);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  opacity: 50%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.disabled {
+  display: none;
+}
+
+.errorMessage {
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+  color: black;
+}
+
+.loadingMessage {
+  font-size: 18px;
+  text-align: center;
+  color: var(--text-color-secondary);
+  margin: auto; 
+}
+
+@media screen and (max-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .buttonsWrapper {
+    gap: 10px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .description {
+    font-size: 12px;
+    max-width: 300px;
+  }
+
+  .mainSection {
+    gap: 20px;
+  }
+
+  .background {
+    padding: 0 0 50px 0;
+  }
+
+  .tooltip .tooltiptext {
+    font-size: 10px;
+    padding: 2px;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -20px;
+    bottom: unset;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    top: unset;
+    left: 50%;
+    margin-left: -45px;
+    border-color: transparent transparent black transparent;
+  }
+}
