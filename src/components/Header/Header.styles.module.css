@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 110px;
+    overflow: hidden;
+    align-items: center;
+    height: fit-content;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burgerMenuIcon {
+    height: 40px;
+    display: none;
+}
+
+.burgerButton {
+    background-color: transparent;
+    border: none;
+}
+
+.burgerMenu {
+    background-color: blueviolet;
+}
+
+.themeButton {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-secondary);
+    font-size: var(--font-size-small);
+}
+
+.themeButton:hover {
+    color: var(--tiffany-green);
+}
+
+.moonIcon {
+    height: 44px;
+}
+
+.sunIcon {
+    height: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .burgerMenuIcon {
+        display: block;
+    }
+
+    .burgerIcon {
+        height: 64px;
+    }
+
+    .moonIcon, .sunIcon {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 20px 10px;
+    }
+
+    .burgerIcon {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .moonIcon, .sunIcon {
+        margin-right: 0px;
+    }
+}

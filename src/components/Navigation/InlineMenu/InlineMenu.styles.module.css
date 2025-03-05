@@ -1,0 +1,26 @@
+.inlineMenu {
+  display: flex;
+  list-style: none;
+}
+
+.inlineMenuItem {
+  color: rgba(40, 34, 75, 1);
+  padding-right: 40px;
+  font-size: var(--font-size-small);
+  text-decoration: none;
+  color: var(--text-color-secondary);
+}
+
+.active {
+  color: var(--tiffany-green);
+}
+
+.inlineMenuItem:hover {
+  color: var(--tiffany-green);
+}
+
+@media screen and (max-width: 640px) {
+  .inlineMenu {
+    display: none;
+  }
+}

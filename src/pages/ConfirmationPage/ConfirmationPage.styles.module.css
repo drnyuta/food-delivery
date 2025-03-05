@@ -1,0 +1,27 @@
+.description {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .mainSection {
+      gap: 10px;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .description {
+      font-size: 16px;
+    }
+  }
